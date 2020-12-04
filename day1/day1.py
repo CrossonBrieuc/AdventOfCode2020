@@ -3,8 +3,7 @@
 
 res='NA'
 val=[]
-with open("/home/bcr/PycharmProjects/AdventOfCode/input_day1.txt","r") as input:
-	input.readline()
+with open("input_day1.txt","r") as input:
 	for i in input:
 		val.append(int(i))
 

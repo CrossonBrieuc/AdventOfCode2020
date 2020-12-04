@@ -3,8 +3,7 @@
 
 res=0
 val=[]
-with open("/home/bcr/PycharmProjects/AdventOfCode/input_day2.txt","r") as input:
-	input.readline()
+with open("input_day2.txt","r") as input:
 	for i in input:
 		val.append(i)
 
