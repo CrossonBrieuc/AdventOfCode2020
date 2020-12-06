@@ -37,7 +37,7 @@ for x in val:
 print("part1 :",res)
 
 
-# part 2
+# part 2   *c'est pas beau*
 
 res=0
 
