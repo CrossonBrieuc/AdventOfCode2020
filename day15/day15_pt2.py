@@ -16,18 +16,13 @@ print(val)
 
 lng = len(val)
 
-done = False
 for x in range(lng, 30000000):
-	if done == False:
-		val.insert(0 , 0) 
-		if val[0] in val[1:]:
-			done = True
-	else:
-		val.insert(0, val[1:].index(val[0]) + 1)
-		done = False
-		if val[0] in val[1:]:
-			done = True
-
+	try:
+		nb = val[1:].index(val[0]) + 1
+	except:
+		nb = 0
+	val.insert(0, nb)
+		
 	print(x, end='')
 	print('\ractual nbr : ', end='', flush=True)
 
